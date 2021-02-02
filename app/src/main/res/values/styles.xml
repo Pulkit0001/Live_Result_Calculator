@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+
+    </style>
+
+    <style name="Cal_Button" >
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:insetTop">3dp</item>
+        <item name="android:insetBottom">3dp</item>
+        <item name="android:insetLeft">3dp</item>
+        <item name="android:insetRight">3dp</item>
+        <item name="cornerRadius">25dp</item>
+    </style>
+    <style name="Cal_Outlined_button" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:insetTop">3dp</item>
+        <item name="android:insetBottom">3dp</item>
+        <item name="android:insetLeft">3dp</item>
+        <item name="android:insetRight">3dp</item>
+        <item name="cornerRadius">25dp</item>
+        <item name="backgroundTint">@color/colorOnPrimary</item>
+    </style>
+
+</resources>

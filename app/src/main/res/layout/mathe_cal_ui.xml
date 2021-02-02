@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/math_buttons"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_dot"
+        style="@style/Cal_Outlined_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+
+        android:text="@string/dot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:strokeColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/button0"
+        style="@style/Cal_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:text="@string/zero"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/bracketbuttons"
+        app:layout_constraintStart_toEndOf="@id/button_dot"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+
+    <Button
+        android:id="@+id/button_equals"
+        style="@style/Cal_Outlined_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/equal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bracketbuttons"
+        app:layout_constraintTop_toBottomOf="@+id/button_add"
+        app:strokeColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Cal_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/three"
+
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_dot"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/Cal_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/six"
+
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="25dp"
+        app:elevation="500dp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+    <Button
+        android:id="@+id/button9"
+        style="@style/Cal_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+
+        android:text="@string/nine"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toStartOf="@+id/button8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonAC" />
+
+    <Button
+        android:id="@+id/button8"
+        style="@style/Cal_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/eight"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toStartOf="@+id/button7"
+        app:layout_constraintStart_toEndOf="@+id/button9"
+        app:layout_constraintTop_toBottomOf="@id/button_back" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/Cal_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/five"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@id/button4"
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Cal_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/two"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/button0"
+        app:layout_constraintEnd_toStartOf="@+id/button1"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <Button
+        android:id="@+id/button7"
+        style="@style/Cal_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/seven"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toStartOf="@+id/button_multiply"
+        app:layout_constraintStart_toEndOf="@+id/button8"
+        app:layout_constraintTop_toBottomOf="@id/button_power" />
+
+    <Button
+        android:id="@+id/button_multiply"
+        style="@style/Cal_Outlined_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/multiply"
+        app:layout_constraintBottom_toTopOf="@+id/button_minus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@id/button_divide"
+        app:strokeColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/Cal_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/four"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/button1"
+        app:layout_constraintEnd_toStartOf="@+id/button_minus"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+    <Button
+        android:id="@+id/button_minus"
+        style="@style/Cal_Outlined_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/minus"
+        app:layout_constraintBottom_toTopOf="@+id/button_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/button_multiply"
+        app:strokeColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/Cal_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/one"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="25dp"
+        app:elevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/bracketbuttons"
+        app:layout_constraintEnd_toStartOf="@+id/button_add"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button_add"
+        style="@style/Cal_Outlined_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/add"
+        app:layout_constraintBottom_toTopOf="@+id/button_equals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/button_minus"
+        app:strokeColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/buttonAC"
+        style="@style/Cal_Outlined_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="18sp"
+        android:text="@string/AC_button"
+        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintEnd_toStartOf="@+id/button_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/button_back"
+        style="@style/Cal_Outlined_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/back"
+        app:layout_constraintBottom_toTopOf="@id/button8"
+        app:layout_constraintEnd_toStartOf="@+id/button_power"
+        app:layout_constraintStart_toEndOf="@id/buttonAC"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/button_power"
+        style="@style/Cal_Outlined_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/power"
+        app:elevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toStartOf="@+id/button_divide"
+        app:layout_constraintStart_toEndOf="@id/button_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/colorPrimaryVariant" />
+
+    <Button
+        android:id="@+id/button_divide"
+        style="@style/Cal_Outlined_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/divide"
+        app:layout_constraintBottom_toTopOf="@+id/button_multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_power"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/colorPrimary" />
+
+
+    <LinearLayout
+        android:id="@+id/bracketbuttons"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:foregroundGravity="fill_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_equals"
+        app:layout_constraintStart_toEndOf="@id/button0"
+        app:layout_constraintTop_toBottomOf="@+id/button1">
+
+
+        <Button
+            android:id="@+id/buttonlb"
+
+            style="@style/Cal_Outlined_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_weight="1"
+            android:text="@string/leftbracket"
+            android:textSize="24sp"
+            app:strokeColor="@color/colorPrimaryVariant" />
+
+        <Button
+            android:id="@+id/buttonrb"
+
+            style="@style/Cal_Outlined_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_weight="1"
+            android:text="@string/rightbracket"
+            android:textSize="24sp"
+            app:strokeColor="@color/colorPrimary" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

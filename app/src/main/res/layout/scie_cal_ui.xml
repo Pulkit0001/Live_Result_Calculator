@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sci_buttons">
+
+    <Button
+        android:id="@+id/sin"
+        style="@style/Cal_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/sine"
+        app:layout_constraintBottom_toTopOf="@+id/logn"
+        app:layout_constraintEnd_toStartOf="@+id/cos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cos"
+        style="@style/Cal_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/cosine"
+        app:layout_constraintBottom_toTopOf="@+id/log"
+        app:layout_constraintEnd_toStartOf="@+id/tan"
+        app:layout_constraintStart_toEndOf="@+id/sin"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tan"
+        style="@style/Cal_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/tangent"
+        app:layout_constraintBottom_toTopOf="@id/pie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cos"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logn"
+        style="@style/Cal_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/natural_lograthmic"
+        app:layout_constraintBottom_toTopOf="@id/factorial"
+        app:layout_constraintEnd_toStartOf="@+id/log"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sin" />
+
+    <Button
+        android:id="@+id/log"
+        style="@style/Cal_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/lograthmic"
+        app:layout_constraintBottom_toTopOf="@id/Button_sqrt"
+        app:layout_constraintEnd_toStartOf="@+id/pie"
+        app:layout_constraintStart_toEndOf="@+id/logn"
+        app:layout_constraintTop_toBottomOf="@+id/cos" />
+
+    <Button
+        android:id="@+id/pie"
+        style="@style/Cal_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/pie"
+        app:layout_constraintBottom_toTopOf="@id/Button_sqrt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/log"
+        app:layout_constraintTop_toBottomOf="@+id/tan" />
+
+    <Button
+        android:id="@+id/factorial"
+        style="@style/Cal_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/factorial"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/reciprocal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logn" />
+
+    <Button
+        android:id="@+id/reciprocal"
+        style="@style/Cal_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/reciprocal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Button_sqrt"
+        app:layout_constraintStart_toEndOf="@+id/factorial"
+        app:layout_constraintTop_toBottomOf="@+id/log" />
+
+    <Button
+        android:id="@+id/Button_sqrt"
+        style="@style/Cal_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/average"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/reciprocal"
+        app:layout_constraintTop_toBottomOf="@+id/pie" />
+</androidx.constraintlayout.widget.ConstraintLayout>
